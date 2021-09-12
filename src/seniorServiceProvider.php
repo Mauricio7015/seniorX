@@ -4,7 +4,7 @@ namespace SeniorX\SeniorX;
 
 use Illuminate\Support\ServiceProvider;
 
-class SeniorServiceProvider extends ServiceProvider
+class SeniorXServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -25,11 +25,11 @@ class SeniorServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/seniorx.php', 'senior');
+        $this->mergeConfigFrom(__DIR__.'/../config/seniorx.php', 'seniorx');
 
 
         // Register the service the package provides.
-        $this->app->singleton('senior', function ($app) {
+        $this->app->singleton('seniorx', function ($app) {
             return new Senior;
         });
     }
