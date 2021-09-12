@@ -14,7 +14,7 @@ class SeniorServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/senior.php' => config_path('senior.php'),
+            __DIR__.'/../config/seniorx.php' => config_path('seniorx.php'),
         ]);
     }
 
@@ -25,7 +25,7 @@ class SeniorServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/senior.php', 'senior');
+        $this->mergeConfigFrom(__DIR__.'/../config/seniorx.php', 'senior');
 
 
         // Register the service the package provides.
@@ -41,6 +41,6 @@ class SeniorServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['senior'];
+        return ['seniorx'];
     }
 }
