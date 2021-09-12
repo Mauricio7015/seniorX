@@ -7,7 +7,7 @@ use Senior\src\Login;
 
 class Senior {
     public function senior($login, $password, $method) {
-        $token = $this->login($login, $password);
+        $token = $this->login($login, $password); 
 
         $this->$method($token);
     }
