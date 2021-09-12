@@ -2,7 +2,7 @@
     "name": "senior-x/senior-x",
     "type": "library",
     "license": "GPL-3.0-only",
-    "minimum-stability": "beta",
+    "minimum-stability": "beta", 
     "autoload": {
         "psr-4": {
             "SeniorX\\SeniorX\\": "src/"
