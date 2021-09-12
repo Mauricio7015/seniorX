@@ -1,6 +1,8 @@
 {
     "name": "senior-x/senior-x",
     "type": "library",
+    "license": "GPL-3.0-only",
+    "minimum-stability": "beta",
     "autoload": {
         "psr-4": {
             "SeniorX\\SeniorX\\": "src/"
@@ -14,5 +16,12 @@
     ],
     "require": {
         "php": ">=7.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OmieLaravel\\Omie\\OmieServiceProvider"
+            ]
+        }
     }
 }
